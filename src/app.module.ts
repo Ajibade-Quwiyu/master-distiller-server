@@ -5,6 +5,7 @@ import { AdminServerModule } from './admin-server/admin-server.module';
 import { FlavourWheelModule } from './flavour-wheel/flavour-wheel.module';
 import { AdminServer } from './entities/admin-server.entity';
 import { FlavourWheel } from './entities/flavour-wheel.entity';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -30,5 +31,6 @@ import { FlavourWheel } from './entities/flavour-wheel.entity';
     AdminServerModule,
     FlavourWheelModule,
   ],
+  controllers: [AppController],
 })
 export class AppModule {}
